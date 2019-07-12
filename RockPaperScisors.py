@@ -8,16 +8,18 @@ scisors = "scisors"
 player1 = choice([rock, paper, scisors])
 player2 = choice([rock, paper, scisors])
 
-print(player1)
-print(player2)
+print("player 1 choose the "+ str.upper(player1))
+print("player 2 choose the "+ str.upper(player2))
 
 if player1 == player2:
-    print("draw")
+    print("This is DRAW,try once again")
 elif player1 == rock and player2 == scisors:
-    print("player1")
+    print("player 1 win")
 elif player1 == paper and player2 == rock:
-    print("player1")
+    print("player 1 win")
 elif player1 == scisors and player2 == paper:
-    print("player1")
+    print("player 1 win")
 else:
-    print("player2")
+    print("player 2 win")
+
+
